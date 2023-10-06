@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo_final.dao.ProductDao">
+
+<select id="selectList" resultType="ProductVo">
+    select * from product order by p_idx
+</select>
+
+<select id="selectOwnerList" parameterType="int" resultType="ProductVo">
+    select * from product where o_idx=#{ o_idx } order by p_idx
+</select>
+
+<select id="selectCategoryList" parameterType="int" resultType="ProductVo">
+    select * from product where category_idx=#{ category_idx } order by category_idx
+</select>
+
+ <select id="selectOne"  parameterType="int"  resultType="ProductVo">
+     select * from product where p_idx=#{ p_idx }
+  </select>
+
+  <select id="selectOneIdx" parameterType="int" resultType="ProductVo">
+    select * from product where o_idx=#{ o_idx }
+</select>
+
+
+<insert id="insert" parameterType="ProductVo">
+    insert into product values(seq_product_p_idx.nextVal,
+                                #{ p_number },
+                                #{ p_name },
+                                #{ p_price },
+                                #{ p_saleprice },
+                                #{ p_image_s },
+                                #{ p_image_l },
+  	                            #{ p_content },
+                                sysdate,
+                                sysdate,
+                                #{ category_idx },
+                                #{o_idx}
+                                )
+</insert>
+
+<delete id="delete" parameterType="int">
+      delete from product where p_idx=#{ p_idx }
+  </delete>
+
+  <update id="update" parameterType="ProductVo">
+      update product set p_name=#{ p_name }, 
+                         p_saleprice=#{ p_saleprice },
+                         p_price=#{ p_price },
+                         p_content=#{ p_content },
+                         p_modifydate=sysdate 
+      where p_idx=#{ p_idx }
+  </update> 
+
+    <update id="update_filename" parameterType="ProductVo">
+      update product set p_image_l=#{ p_image_l },
+                       p_modifydate=sysdate 
+      where p_idx=#{ p_idx }
+  </update> 
+
+</mapper>

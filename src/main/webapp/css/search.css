@@ -1,0 +1,251 @@
+
+.keyword_info_box {
+    position: fixed;
+    top: 111px;
+    width: 100%;
+
+    height: 0;
+    background: #fff;
+    z-index: 20;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    transition: height 0.3s;
+
+}
+.search_keyword{
+    top: 0;
+}
+
+.keyword_info_box.on {
+    height: 30rem;
+    border-top: 1px solid #ebebeb;
+    top: 100px;
+}
+.keyword_info_box .inner {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+.keyword_search_bg {
+  	width: 100%;
+    height: 13rem;
+    background: #afbdff !important;
+    border-radius: 1.5rem;
+    margin-top: 5rem;
+}
+.keyword_search_bg form {
+    padding: 20px!important;
+    height: 100%;
+    display: flex;
+    background-color: #afbdff !important;
+    border-radius: 1.5rem !important;
+}
+.keyword_search input {
+    border: none;
+    height: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    width: calc(100% - 4rem);
+    margin-right: 1rem;
+    padding: 2rem 3rem;
+}
+.keyword_search input:focus{
+   outline: none;
+}
+
+.keyword_search {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+.keyword_search button {
+    width: 4rem;
+    height: 4em;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+.keyword_search button img{
+    width: 2rem;
+}
+
+
+
+@media screen and (max-width: 1110px) {
+    .keyword_info_box {
+        top: 66px;
+    }
+    .keyword_search_bg {
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width: 989px) {
+    .keyword_info_box {
+        padding: 0 5rem;
+    }
+    .keyword_info_box .inner {
+        width: auto;
+    }
+    .search_common .keyword_box.active:hover .keyword_box.list {
+        display: none;
+    }
+    .result_info_box .keyword_box.on .keyword_box.list {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .keyword_info_box .keyword_search,
+    .search_common .keyword_search {
+        width: 50rem;
+    }
+    .keyword_box_all .keyword_box:first-child {
+        margin-right: 2rem;
+    }
+    .keyword_search_bg {
+        margin-top: 5rem;
+    }
+    .top_searched_box {
+        width: 53rem;
+    }
+    .search_common .tab .tab_ul {
+        max-width: 90rem;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 1.5rem;
+        padding: 1rem 0;
+    }
+    .search_common .search_keyword {
+        margin-bottom: 7rem;
+    }
+    .result_info_box {
+        margin-bottom: 5rem;
+    }
+    .search_common .tab .tab_ul .tab_li {
+        width: calc((100% / 3) - 1rem);
+        padding: 0 2rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+    .tab_container {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .keyword_info_box .keyword_search,
+    .search_common .keyword_search {
+        width: 45rem;
+    }
+    .result_info_box {
+        flex-direction: column;
+        align-items: normal;
+    }
+    .result_info_box .txt_box {
+        margin-bottom: 2rem;
+    }
+    .search_common .search_keyword {
+        margin-bottom: 5rem;
+    }
+    .search_common .keyword_box.list {
+        left: 58px;
+    }
+    .search_common .tab .tab_ul .tab_li {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .keyword_info_box {
+        top: 50px;
+        padding: 0 3rem;
+    }
+    .keyword_info_box.on {
+        height: 40rem;
+    }
+    .keyword_search_bg {
+        margin-top: 3rem;
+        border-radius: 1rem;
+        height: 8rem;
+    }
+    .keyword_info_box .keyword_search,
+    .search_common .keyword_search {
+        width: 100% !important;
+        padding: 0 2rem!important;
+        transition: none;
+    }
+    .top_searched_box {
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+    .top_searched_box h3.tit {
+        font-size: 1.5rem;
+    }
+    .top_searched_box .keyword_box ul li,
+    .top_searched_box .keyword_box ul li a {
+        font-size: 1.2rem;
+    }
+    .top_searched_box .keyword_box .up,
+    .top_searched_box .keyword_box .down,
+    .top_searched_box .keyword_box .same {
+        font-size: 1.2rem;
+    }
+    .top_searched_box .keyword_box ul li .num,
+    p.keyword_box .num {
+        margin-right: 0.8rem;
+    }
+    .search_common .result_info_box .txt_box p {
+        font-size: 1.2rem;
+    }
+    .search_common .search_keyword {
+        margin-bottom: 3rem;
+    }
+    .result_info_box .top_searched_box h3.tit {
+        font-size: 1.3rem;
+    }
+    .result_info_box .keyword_box {
+        font-size: 1.2rem;
+    }
+    .search_common .keyword_box.list {
+        left: 63px;
+    }
+
+    .result_info_box .txt_box {
+        margin-bottom: 1rem;
+    }
+    .result_info_box {
+        margin-bottom: 3rem;
+    }
+    .search_common .tab .tab_ul .tab_li.on:after {
+        bottom: -8px;
+        right: -10px;
+        background-size: 1.5rem;
+    }
+    .drop_box_all {
+        width: 100%;
+    }
+    .result_info_box .keyword_box {
+        width: 100%;
+    }
+    .search_common .keyword_box.list {
+        width: calc(100% - 63px);
+    }
+    .search_common .tab .tab_ul .tab_li {
+        height: 3.8rem;
+        line-height: 3.8rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .search_common .keyword_box.list {
+        left: 59px;
+    }
+    .search_common .keyword_box.list {
+        width: calc(100% - 59px);
+    }
+}

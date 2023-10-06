@@ -1,0 +1,53 @@
+#container {
+
+    padding-top: 9;
+    overflow: hidden;
+
+
+}
+
+
+* {
+    /* font-family: 'Heebo','Noto Sans KR', sans-serif; */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-style: normal;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: -0.075rem;
+    word-break: keep-all;
+    -webkit-text-size-adjust: 100%;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+/* @media (min-width: 1025px) and (max-width: 1280px)
+html, body {
+    font-size: 51.5%;
+}
+html, body {
+    font-size: 62.5%;
+} */
+style attribute {
+    --menuLeftPos: 528px;
+    --tabLeftPos: 7px;
+}
+:root {
+    --menuLeftPos: -1.5rem;
+    --tabLeftPos: 0;
+    --tabLeftPos2: 0;
+    --tabLeftPos3: 0;
+    --mainColor: #1954db;
+    --storeLi: 0;
+}
+:root {
+    --swiper-navigation-size: 44px;
+}
+:root {
+    --swiper-theme-color: #007aff;
+}

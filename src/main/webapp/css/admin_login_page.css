@@ -1,0 +1,331 @@
+#contaniner {
+    width: 100%;
+   
+}
+
+
+.sub_container{
+    padding-top: 4rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 8.5%;
+    margin-top: 5%;
+}
+
+h2.page_title{
+    text-align: center;
+    font-size: 5.6rem;
+    color: #777
+}
+
+.tab_content{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.tab .tab_effect_box {
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: #f4f6f8;
+    border-radius: 1rem;
+}
+.tab li{
+    /* float: left;
+    position: relative;
+    width: calc((100% / 2) - 2rem); */
+    height: 3.8rem;
+    line-height: 3.8rem;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    width: 20rem;
+    margin: auto;
+    background-color: #4E73DF; 
+    border-radius: 7px;
+    color: white;
+}
+
+.tab_li.on{
+    position: relative;
+}
+
+legend{
+    display: none;
+}
+span.tit{
+    line-height: 2.5;
+}
+.check_line{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.check_line d-chk{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-style: normal;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: -0.075rem;
+    word-break: keep-all;
+
+
+}
+
+.highlight_text {
+    color: var(--mainColor);
+    border-bottom: 1px solid var(--mainColor);
+    padding-bottom: 0.1rem;
+    display: inline-block;
+    line-height: 1;
+}
+.input_box{
+    display: block;
+    line-height: 3;
+}
+.input_box .input_text {
+    height: 4.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    
+}
+.input_box .input_text {
+    border-radius: 1rem;
+    border: solid 1px #ddd;
+    background-color: #fff;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+
+.btn_ver{
+    width: 100%;
+    background-color: #4E73DF;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    /* height: 4rem; */
+    line-height: 10px;
+    line-height: 3;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.btn_ver:hover{
+    background-color: #2E59D9;
+}
+.login_page .page_title_box {
+    padding-bottom: 0;
+}
+
+.login_page .check_line {
+    margin-top: 1.5rem;
+}
+
+.login_page .btn_ver1 {
+    margin: 3rem auto 2rem;
+}
+
+.login_page .tab {
+    width: 100%;
+    /* height: 8rem; */
+    /* padding-bottom: 2.1rem; */
+    padding-top: 0.5rem;
+}
+
+
+.login_page .tab .tab_effect {
+    width: calc(100% / 2 - 1rem);
+}
+
+.login_page .radio_box_wrap {
+    margin-bottom: 2.5rem;
+    flex-direction: row;
+    justify-content: center;
+}
+.login_page .radio_box_wrap .radio_box + .radio_box {
+    margin-left: 7rem;
+}
+.login_page .radio_box_wrap .radio_box .radio_text {
+    font-size: 1.6rem;
+}
+
+.login_page .sns-box {
+    max-width: 50rem;
+    margin: 0 auto 5rem;
+}
+
+.login_page .sns-box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    height: 6.5rem;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 1.8rem;
+}
+.login_page .sns-box a > img {
+    margin-right: 1rem;
+}
+
+.login_page .sns-box .sns-naver {
+    background: #19ce60;
+}
+
+.login_page .sns-box .sns-kakao {
+    background: #fde432;
+    color: #000;
+}
+
+.login_page .sns-box .sns-fb {
+    background: #4669c3;
+}
+
+.login_page .join_txt {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.login_page .join_txt a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1440px) {
+    .login_page_footer>img:nth-child(1) {
+        width: 9.375vw;
+    }
+
+    .login_page_footer>img:nth-child(2) {
+        width: 6.771vw;
+        left: 10.417vw;
+    }
+    .login_page_footer>img:nth-child(3) {
+        right: 15rem;
+    }
+    .login_page_footer>img:nth-child(4) {
+        right: 2rem;
+    }
+    .login_page .btn_ver,
+    .login_page .sns-box a {
+        height: 5.2rem;
+        font-size: 1.6rem;
+        border-radius: 7px;
+    }
+
+    .login_page .btn_ver1 {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    .login_page .sns-box {
+        max-width: 500px;
+    }
+    .login_page .sns-box a:nth-child(1) img {
+        height: 15px;
+    }
+    .login_page .sns-box a:nth-child(2) img {
+        height: 18px;
+    }
+    .login_page .sns-box a:nth-child(3) img {
+        height: 21px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .login_page_footer>img{
+        display: none;
+    }
+    .login_page_footer .center_info {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 500px;
+        /* width: 90%; */
+        margin: 0 auto;
+    }
+    .login_page_footer .center_info .center_info_desc{
+        margin: 0;
+        width: 100%;
+    }
+    .login_page_footer .center_info .info_desc.n1,
+    .login_page_footer .center_info .info_desc.n2,
+    .login_page_footer .center_info .info_desc.n3,
+    .login_page_footer .center_info .info_desc.n3 img{
+        width: 100%;
+    }
+    .login_page_footer .center_info .info_desc.n3{
+        margin-top: 1.5rem;
+    }
+    .login_page_footer .center_info .info_desc.n3>div{
+        top: 12rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .find_id_page .page_title{
+        padding-bottom: 5rem;
+    }
+    .find_id_page .section01 {
+        width: 100%;
+    }
+    .find_id_page .section01_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .find_id_page .section01_container .find_box+.find_box {
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+    .login_page_footer .center_info .info_desc.n3>div {
+        top: 10%;
+        left: 2.5rem;
+    }
+}
+
+
+@media all and (max-width:500px) {
+    .login_page_footer_container>p,
+    .login_page_footer .center_info .info_desc a span,
+    .login_page_footer .center_info .info_desc.n3>div > span,
+    .tit_box ul li,
+    .radio_box .content{
+        font-size: 1.4rem;
+    }
+
+    
+
+    /* 버튼 */
+    .login_page .btn_ver,
+    .login_page .sns-box a {
+        height: 4.5rem;
+        font-size: 1.4rem;
+        border-radius: 6px;
+    }
+    .login_page .sns-box {
+        margin-bottom: 2.5rem;
+    }
+    .login_page .btn_ver1 {
+        margin-top: 2.5rem;
+    }
+}

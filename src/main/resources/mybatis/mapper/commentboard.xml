@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo_final.dao.CommentBoardDao">
+<!-- 댓글조회 -->
+<select id="selectList" parameterType="Map" resultType="CommentBoardVo">
+
+   select * from
+ (
+    select 
+        rank() over(order by c_b_idx desc) as no,
+        c_b_idx +1,
+     c.*     
+    from 
+    (    
+        select * from comment_board
+        where b_idx=#{b_idx}
+    )c
+)
+    where no between #{start} and #{end}
+
+</select>
+
+<!-- 현 게시물 댓글 수 -->
+  <select id="selectRowTotal" parameterType="Map" resultType="int">
+    select nvl(count(*),0) from comment_board
+    where b_idx=#{b_idx} 
+    
+     
+  </select>
+
+
+<!-- 댓글 추가 -->
+  <insert id="insert" parameterType="CommentBoardVo">
+    insert into comment_board values(
+        seq_comment_board_c_b_idx.nextVal,
+        #{c_b_content},
+        #{c_b_ip},
+        sysdate,
+        #{b_idx},
+        #{mem_idx},
+        #{mem_id},
+        #{mem_name}        
+    )
+  </insert>
+
+  <delete id="delete" parameterType="int">
+    delete from comment_board where c_b_idx=#{c_b_idx}
+  </delete>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

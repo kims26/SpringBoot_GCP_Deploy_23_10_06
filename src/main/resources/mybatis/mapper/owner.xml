@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo_final.dao.OwnerDao">
+
+<select id="selectList" resultType="OwnerVo">
+    select * from owner order by o_idx
+</select>
+
+<select id="selectOne" resultType="ProductVo">
+    select * from product order by p_idx
+</select>
+
+
+<select id="selectOneFromIdx" parameterType="int" resultType="OwnerVo">
+    select * from owner where o_idx=#{ o_idx }
+</select>
+
+<select id="selectOneIdx" parameterType="int" resultType="ProductVo">
+    select * from product where p_idx=#{ p_idx }
+</select>
+
+
+<select id="selectOneFromId" parameterType="String" resultType="OwnerVo">
+    select * from owner where o_id=#{o_id}
+</select>
+
+
+
+<!-- <insert id="insert" parameterType="OwnerVo">
+    insert into owner values(seq_owner_o_idx.nextVal,
+                                #{ o_name },
+                                #{ o_email },
+                                #{ o_id },
+  	                            #{ o_pwd },
+  	                            #{ o_addr },
+                                #{ o_tel }
+                            )
+</insert> -->
+
+<update id="update" parameterType="OwnerVo">
+    update owner set o_name=#{ o_name },
+  	                   o_pwd=#{ o_pwd },
+                       o_addr=#{ o_addr },
+                       o_zipcode=#{ o_zipcode }
+	 where o_idx=#{ o_idx }
+</update>
+
+<delete id="delete" parameterType="int">
+    delete from owner where o_idx=#{ o_idx }
+</delete>
+
+<insert id="insertPendingOwner" parameterType="OwnerVo">
+    insert into owner (o_idx, o_name, o_email, o_id, o_pwd, o_addr, o_tel, approvalStatus)
+    values (seq_owner_o_idx.nextVal, #{o_name}, #{o_email}, #{o_id}, #{o_pwd}, #{o_addr}, #{o_tel}, '대기')
+</insert>
+
+
+<update id="updateApprovalStatus" parameterType="Map">
+    update owner
+    set approvalStatus = #{approvalStatus}
+    where o_idx = #{o_idx}
+</update>
+
+
+
+
+<select id="getOwnersByApprovalStatus" parameterType="String" resultType="OwnerVo">
+    SELECT * FROM owner WHERE approvalStatus = #{approvalStatus}
+</select>
+
+
+</mapper>

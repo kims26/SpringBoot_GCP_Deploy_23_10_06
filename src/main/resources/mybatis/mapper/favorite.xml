@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo_final.dao.FavoriteDao">
+	
+	<!-- 전체조회 
+		select는  반드시 resultType을 작성해야 된다.
+		resultType(Map)는 행(Record)의 결과Type이다.
+	-->
+	<select id="selectList" parameterType="int" resultType="favoriteVo">
+		select f.*,rank() over(order by f_idx asc) as count from(select * from f_charger where mem_idx = #{mem_idx})f
+	</select>
+
+  <select id="c_selectList" parameterType="int" resultType="int">
+    select count(*) as count from f_charger where mem_idx=#{mem_idx} 
+  </select> 
+	
+	<insert id="insert" parameterType="favoriteVo">
+    insert into f_charger values(
+                  seq_f_charger_f_idx.nextVal, 
+                  #{ marker_idx },
+                  #{ csId },
+                  #{ csNm },
+                  #{ addr },
+                  #{ cpTp },
+                  #{ chargeTp },
+                  #{ cpStat },
+                  #{ statUpdateDatetime },
+                  #{ f_lat },
+                  #{ f_longi },
+                  #{ mem_idx })
+  </insert>
+
+  <delete id="delete" parameterType="int">
+    delete from f_charger where f_idx = #{f_idx}
+  </delete>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

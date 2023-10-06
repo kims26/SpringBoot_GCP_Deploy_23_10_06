@@ -1,0 +1,384 @@
+/* ¸¶ÀÌÆäÀÌÁö °øÅë */
+.mypage_page .sub_container{
+    padding-bottom: 15rem;
+}
+.mypage_page .page_title{
+    padding-bottom: 5rem;
+}
+.mypage_page .tab {
+    max-width: 105rem;
+    margin: 0 auto;
+}
+.mypage_page .tab .tab_effect {
+    width: calc(100% / 3 - 1rem);
+}
+.mypage_page .section01 .tab_content {
+    max-width: 128rem;
+}
+.mypage_page .tit_box {
+    margin-bottom: 3rem;
+    align-items: baseline;
+}
+.mypage_page #mypage1 .tit_box:last-child {
+    margin-top: 5rem;
+}
+.mypage_page #mypage2 .tit_box {
+    margin-top: 5rem;
+}
+.mypage_page .form_box{
+    max-width: 50rem;
+    margin: 8.5rem auto 0;
+}
+.mypage_page .popup_cont .form_box{
+    margin-top:0;
+}
+.mypage_page .shop_account {
+    display: flex;
+    max-width: 60rem;
+    margin: 5rem auto 7rem;
+    padding: 2.5rem 0;
+    border: 1px solid #ebebeb;
+    border-radius: 15px;
+    justify-content: space-evenly;
+}
+.mypage_page .shop_account dl {
+    width: 33%;
+    text-align: center;
+}
+.mypage_page .shop_account dl:nth-child(1) dd {
+    color: #afbdfe;
+}
+.mypage_page .shop_account dl:nth-child(2) {
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+.mypage_page .shop_account dl dt {
+    font-size: 1.8rem;
+}
+.mypage_page .shop_account dl dd {
+    font-size: 3.7rem;
+    font-weight: 900;
+}
+.mypage_page .btn_pay_box {
+    margin: 2.5rem 0 8rem;
+}
+.mypage_page .btn_pay_box .pay_btn {
+    width: 20rem;
+    height: 6rem;
+    background: #afbdfe;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 9.6px 0.4px rgba(0, 0, 0, 0.05);
+    margin-left: 1.2rem;
+}
+.mypage_page .btn_ver2_box {
+    margin-top: 3.5rem;
+}
+.mypage_page .btn_withdraw {
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.mypage_page .sns_account dl {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.mypage_page .sns_account dl dt {
+    width: 15rem;
+    font-weight: 400;
+}
+.mypage_page .sns_account dl dd a {
+    width: 12rem;
+    margin-right: 4rem;
+    padding: 0.6rem 0;
+    font-weight: 400;
+}
+.mypage_page .sns_account dl dd:last-child {
+    color: #7f7f7f;
+    font-weight: 400;
+}
+
+.popup_cont .btn_ver.cancel {
+    color: #000;
+}
+
+
+/* table */
+.mypage_box {
+    padding: 1rem 1rem 0;
+    border-radius: 10px;
+    border: solid 1px #ddd;
+    min-height: 17.5rem;
+}
+
+.mypage_table {
+    width: 100%;
+    text-align: center;
+}
+.mypage_table .nothing{
+    padding-top: 5%;
+}
+.mypage_table th {
+    background: #f4f6f8;
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 3.8rem;
+}
+.mypage_table th:nth-child(1) {
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.mypage_table th:nth-child(2) {
+    width: 25%;
+}
+.mypage_table th:nth-child(3) {
+    width: 25%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.mypage_table td {
+    height: 6rem;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.mypage_table tr td {
+    padding: 3.7rem 0;
+    border-top: 1px solid #e7e7e7;
+    word-break: break-all;
+}
+.mypage_table tr:nth-child(1) td {
+    border: 0 none;
+}
+.mypage_table tr td span {
+    text-decoration: underline;
+    cursor: pointer;
+    word-break: break-all;
+}
+.mypage_table tr td.domain img {
+    margin-right: 1rem;
+    vertical-align: middle;
+    height: calc(88px / 2);
+}
+.mypage_table tr td.date .btn-s {
+    margin-top: 1rem;
+}
+.mypage_table tr td.shop .btn-s {
+    margin: 0.3rem 0;
+}
+
+
+/* popup */
+.popup_input_info .with_txt {
+    text-align: left;
+}
+.popup_input_info .with_txt .user_select {
+    width: 100% !important;
+    margin: 0 0 1rem 0 !important;
+}
+.popup_input_info .input_box .pw_txt.err_message {
+    display: block;
+    padding-left: 0.7rem;
+    position: relative;
+}
+.popup_input_info .input_box .err_message::before {
+    content: '*';
+    position: absolute;
+    top: 0;
+    width: 0.3rem;
+    height: 1px;
+    left: 0;
+}
+.popup_input_info .table_cont {
+    text-align: left;
+    margin-top: 2.5rem;
+}
+.popup_input_info .policy_box {
+    min-height: auto;
+    margin-top: 1rem;
+    padding-top: 0;
+}
+.popup_input_info .input_box + .input_box {
+    margin-top: 2.5rem;
+}
+.popup_input_info .radio_box_wrap {
+    margin-bottom: 3rem;
+    flex-direction: row;
+    justify-content: center;
+}
+.popup_input_info .radio_box_wrap .radio_box + .radio_box {
+    margin-left: 7rem;
+}
+.popup_input_info .radio_box_wrap.bg_radio_box_wrap{
+	padding:3rem 2.1rem;
+	background:#f5f6f8;
+	width: 100%;
+    border-radius: 1.5rem;
+}
+
+.popup_input_info .radio_box_wrap.bg_radio_box_wrap .radio_box + .radio_box{
+	margin-left:4rem;
+}
+.popup_input_info .radio_box_wrap.bg_radio_box_wrap .radio_box .radio_text{
+	padding-left: 3rem;
+}
+.popup_input_info .radio_box_wrap.bg_radio_box_wrap .radio_box .radio_text i{
+	color: var(--mainColor);
+	font-style:normal;
+}
+/* mypage */
+.input_box .user_b {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.input_box .user_b span {
+    margin: 0 0.5rem;
+}
+.input_box .user_b .user_btn {
+    width: 39%;
+    height: 6rem;
+    background: #afbdfe;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 9.6px 0.4px rgba(0, 0, 0, 0.05);
+    margin-left: 1.2rem;
+}
+.input_box .user_b .user_btn.edit_pwd {
+    width: 100%;
+    margin: 0;
+}
+.input_box .contact_content {
+    display:block
+}
+.input_box .pw_txt.err_message {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0.8rem 0 0 0;
+    display: block;
+}
+.input_box .user_select  {
+    position: relative;
+    margin-left: 1rem;
+    width: 32.5%;
+}
+.input_box .user_select .select_box_tit {
+    border: solid 1px #ddd;
+    border-radius: 1rem;
+    height: 6rem;
+    line-height: 6rem;
+    padding: 0 2rem;
+    background-image: url('../../../img/common/icon_dropdown.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+    position: relative;
+    cursor: pointer;
+}
+.select_box_tit {
+    width: 100%;
+    height: 100%;
+    line-height: 6rem;
+}
+.input_box input[type="checkbox"] + label > span {
+    font-size: 1.6rem;
+}
+.terms_b label + .txt_b {
+    margin: 1.3rem 0 2rem 0;
+}
+.terms_b .txt_b dd{
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 2;
+    display: block;
+    padding-left: 0.7rem;
+    position: relative;
+}
+
+.check_cont {
+    margin-bottom: 1rem;
+}
+.check_cont > em {
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+.check_cont_s {
+    margin: 1rem 0 0 4rem;
+}
+.check_cont_s label {
+    margin-right: 4rem;
+}
+.check_cont .txt_b {
+    margin: 1.3rem 0 2rem 0;
+}
+.check_cont .txt_b dd {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 2;
+    display: block;
+    padding-left: 0.7rem;
+    position: relative;
+}
+.check_cont label.on:before {
+    background-color: #afbdfe;
+}
+
+.mypage_page .check_cont input[type="checkbox"] + label:before {
+    width: 20px;
+    height: 20px;
+}
+.mypage_page .check_cont label,
+.mypage_page .check_cont label + em {
+    font-size: 1.5rem;
+}
+
+.input_box .err_message {
+    font-size: 1.4rem;
+    color: #ef3c29;
+    margin-top: 0.5rem;
+    display: none;
+}
+.input_box .err_message.error.pw_txt {
+    font-size: 1.4rem;
+    color: #ef3c29;
+}
+.input_box .user_pw_n1 .pw_txt.err_message {
+    display: block;
+}
+.input_box .err_message.error {
+    display: block;
+    padding-left: 0.7rem;
+    position: relative;
+    margin-top:0.5rem;
+}
+.input_box .select_box {
+    display: none;
+}
+.input_box .user_select.on .select_box {
+    display: block;
+}
+.input_box #user_email2 {
+    margin-right: 1.2rem;
+}
+.terms_b.n1 {
+    margin-bottom: 1.6rem;
+}
+.mypage_page .input_box .pw_txt.err_message::before,
+.mypage_page .input_box .error.err_message::before,
+.check_cont .txt_b dd::before {
+    content: '*';
+    position: absolute;
+    top: 0;
+    width: 0.3rem;
+    height: 1px;
+    left: 0;
+}
+.mypage_page .input_box .pw_txt.err_message {
+    display: block;
+    padding-left: 0.7rem;
+    position: relative;
+}
+.login_on {
+    display: none;
+}

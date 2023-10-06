@@ -1,0 +1,100 @@
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background: #fff;
+}
+
+.header .inner{
+	display: relative;
+    align-items: center;
+    justify-content: space-between;
+	width: 80%;
+	margin: auto;
+}
+
+.header .inner h1{
+	
+	float: left;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.header .menu_pc{
+
+position: relative;
+
+}
+.main_gnb{
+	
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 0;
+    line-height: 1;
+
+}
+
+.header .menu #gnb{
+
+	position: flex;
+
+}
+
+.header .menu_pc li.depth1{
+
+	color: #000;
+	float: left;
+
+}
+.header .menu_pc li.depth1{
+
+
+	display: flex;
+    position: relative;
+    padding: 0 14px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #666;
+	
+}
+
+.header .menu_pc li.depth1 a{
+	
+	display: flex;
+    position: relative;
+    padding: 0 14px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #666;
+
+}
+
+.search_b_all{
+
+	display: inline-flex;
+	height: 35px;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.search_b_all .search_b_login_out a{
+
+	display: flex;
+    position: relative;
+    padding: 0 14px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #666;
+
+}

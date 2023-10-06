@@ -1,0 +1,196 @@
+
+.order{
+    width: 100%;
+    background-color: #F4F6F8;
+    padding-bottom: 100px;
+}
+.order >.inner {
+    width: 80%;
+    margin: auto;
+}
+.section{
+    width: 100%;
+    padding-top: 30px;
+}
+.txt_box{
+    height: 125px;
+}
+.no_tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 0.94;
+    color: #1954db;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+h4.tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 0.94;
+    color: #000;
+
+}
+.ord_manage_box .order_process_list{
+display: grid;
+grid-template-columns: repeat(0, 1fr);
+gap: 1.6rem;
+z-index: 1;}
+.order_process_list .ord_process.n2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.7rem;
+}
+.order_process_list .ord_process.n1, .order_process_list .connect.n1, 
+.order_process_list .connect.n2, .order_process_list .connect.n3{
+    border-radius: 1.5rem;
+    background: #fff;
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.07);
+    padding: 3rem;
+}
+.ord_process.n1{
+    height: 250px;
+}
+
+.connect.n0 ul{
+    display: flex;
+    justify-content: space-around;
+}
+.connect.n0 li{
+
+}
+.connect.n0 li a{
+    font-size: 1rem;
+    color: #999;
+    font-weight: 600;
+}
+
+li.order_process0 {
+    position: relative;
+}
+li.order_process1 {
+    position: relative;
+}
+li.order_process2 {
+    position: relative;
+}
+li.order_process3 {
+    position: relative;
+}
+li.order_process0 a img{
+    width: 4rem;
+    position: absolute;
+    top: 5.5rem;
+    left: -10%;
+    filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(162deg) brightness(91%) contrast(84%);
+}
+li.order_process1 a img{
+    width: 4rem;
+    position: absolute;
+    top: 5.5rem;
+    left: -10%;
+    filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(162deg) brightness(91%) contrast(84%);
+}
+li.order_process0 a span{
+    position: absolute;
+    right: 50%;
+    top: 250%;
+    color: #999;
+
+}
+li.order_process1 a span{
+    position: absolute;
+    right: 50%;
+    top: 250%;
+    color: #999;
+
+}
+li.order_process2 a span{
+    position: absolute;
+    right: 45%;
+    top: 250%;
+    color: #999;
+    cursor: pointer;
+
+}
+
+li.order_process3 a span{
+    position: absolute;
+    right: 50%;
+    top: 250%;
+    color: #999;
+    
+
+}
+.connect.n0 li.order_process2 a img{
+    width: 4rem;
+    position: absolute;
+    top: 5.5rem;
+    left: -20%;
+    filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(162deg) brightness(91%) contrast(84%);
+}
+
+.connect.n0 li.order_process3 a img{
+    width: 4rem;
+    position: absolute;
+    top: 5.5rem;
+    left: -10%;
+    filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(162deg) brightness(91%) contrast(84%);
+}
+
+.connect.n1 .tit{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.table tr.tr_tit{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10 0;
+}
+.table tr.tr_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10 0 10 0;
+}
+.table-responsive{
+    min-height: 230px;
+}
+#empty_message{
+    padding: 10 0 10 0;
+}
+#orp a:hover{
+    color: #1954db;
+    cursor: pointer;
+}
+#orp a:hover span{
+    color: #1954db;
+    cursor: pointer;
+}
+
+#orp a span:hover{
+    color: #1954db;
+    cursor: pointer;
+}
+
+#orp a:hover span::after{
+    content: "";
+    position: absolute;
+    left: -60%;
+    bottom: -4.5px;
+    width: 20px;
+    height: 2px;
+    background-color: #1954db;
+ 
+    
+}
+#orp a:hover span::after{
+    color: #1954db;
+    cursor: pointer;
+}

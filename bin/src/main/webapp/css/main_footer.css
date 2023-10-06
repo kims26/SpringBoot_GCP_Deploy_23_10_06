@@ -1,0 +1,63 @@
+
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer {
+
+    background: #fff;
+    margin-bottom: 4rem;
+    
+}
+
+.footer .inner{
+    align-items: center;
+    justify-content: space-between;
+	width: 80%;
+	margin: auto;
+	padding-top: 45px;
+	display: flex;
+}
+.footer .info_f{
+font-size: 14px;
+}
+.footer .info_f ul.sns-con{
+    position: relative;
+    right: auto;
+    top: 0;
+    margin: 0rem 0 2rem;
+}
+.footer .info_f ul.sns-con li{
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+}
+
+.footer .info_f p.copy{
+    display: block;
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+    color: rgba(0, 0, 0, 1);
+    opacity: 0.5;
+
+
+}
+.info_f_link a{
+    margin-right: 0.7rem;
+}
+.info_f_link a:after {
+    display: block;
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.info_f_link{
+    display: inline-block;
+}

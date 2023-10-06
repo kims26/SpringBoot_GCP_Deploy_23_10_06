@@ -1,0 +1,164 @@
+@media screen and (max-width: 900px) {
+    .search_id_page .btn_ver3 {
+        width: 48%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .mypage_login_page .form_box {
+        margin-top: 3rem;
+    }
+    .mypage_page .shop_account dl dt {
+        font-size: 1.6rem;
+    }
+    .mypage_page .shop_account dl dd {
+        font-size: 2.3rem;
+    }
+    .mypage_table th {
+        font-size: 1.2rem;
+    }
+    .mypage_table th:nth-child(1) {
+        width: 50%;
+    }
+    .mypage_table th:nth-child(2) {
+        width: 20%;
+    }
+    .mypage_table th:nth-child(3) {
+        width: 15%;
+    }
+    .mypage_table th:nth-child(4) {
+        width: 15%;
+    }
+    .mypage_table td {
+        font-size: 1.3rem;
+    }
+    .mypage_table tr td .btn-s {
+        min-width: auto;
+        padding: 0.3rem 0.5rem;
+        font-size: 1.2rem;
+    }
+    .mypage_page .btn_pay_box .pay_btn {
+        width: auto;
+        height: 4.5rem;
+        border-radius: 7px;
+        font-size: 1.4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .mypage_page .shop_account {
+        padding: 2rem 0;
+    }
+    .mypage_page .sns_account dl dt {
+        width: 14rem;
+    }
+    .mypage_page .sns_account dl dd a {
+        width: 6rem;
+        font-size: 1.3rem;
+        margin-right: 2rem;
+    }
+    .mypage_page .btn_withdraw {
+        font-size: 1.4rem;
+    }
+
+    .input_box .user_b .user_btn,
+    .input_box .user_select .select_box_tit {
+        height: 4.5rem;
+        line-height: 4.5rem;
+    }
+    .input_box input[type="checkbox"] + label > span {
+        font-size: 1.4rem;
+    }
+    .input_box .txt_b dd {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+    .btn_ver2_box {
+        height: 4.5rem;
+    }
+    .input_box .err_message,
+    .input_box .err_message.error.pw_txt,
+    .input_box .pw_txt.err_message {
+        font-size: 1.2rem;
+    }
+    .user_email .input_text {
+        width: 100%;
+    }
+    .input_box .user_select .select_box_tit {
+        border-radius: 0.5rem;
+    }
+    .input_box .user_select {
+        width: 61.5%;
+    }
+    .input_box #user_email2 {
+        margin-right: 0.8rem;
+    }
+    .input_box .user_b .user_btn {
+        margin-left: 0.8rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+    }
+    .input_box .user_select .select_box_tit {
+        padding: 0 0.6rem;
+        background-position: calc(100% - 10px) center;
+        white-space: nowrap;
+    }
+    .input_box .email_select {
+        font-size: 1.5rem;
+    }
+    .input_box .user_select .select_box {
+        top: 5rem;
+        padding: 1rem;
+    }
+    .mypage_common.mypage .form_box {
+        margin-top: 3rem;
+    }
+    .terms_b .txt_b dd {
+        font-size: 1.3rem;
+    }
+    .popup_input_info .radio_box input + .radio_text::before {
+        top: 5px;
+    }
+    .popup_input_info .radio_box input + .radio_text::after {
+        top: 10px;
+        left: 5px;
+    }
+    .mypage_page .btn-manager, .mypage_page #btn_pay {
+        display:none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .mypage_page .sns_account dl {
+        display: block;
+    }
+    .mypage_page .sns_account dl dt,
+    .mypage_page .sns_account dl dd {
+        display: inline-flex;
+    }
+    .mypage_page .sns_account dl dd:last-child span {
+        display: block;
+        margin-left: 15rem;
+    }
+    .input_box .err_message.error {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 360px) {
+    .mypage_table th:nth-child(1) {
+        width: 50%;
+    }
+    .mypage_table th:nth-child(2) {
+        width: 25%;
+    }
+    .mypage_table th:nth-child(3) {
+        width: 25%;
+    }
+    .mypage_table td.domain {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .check_cont .txt_b dd {
+        font-size: 1.3rem;
+    }
+}
